@@ -1,6 +1,8 @@
 package Inmueble;
 
-public class PlazaGaraje {
+import logica.Inmueble;
+
+public class PlazaGaraje extends Inmueble {
 
 	private char caracter;
 

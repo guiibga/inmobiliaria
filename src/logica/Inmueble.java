@@ -1,99 +1,70 @@
 package logica;
 
-import java.util.Date;
-
 public class Inmueble {
 
-	private int codigo;
-	private boolean venta;
-	private boolean alquiler;
-	private String calle;
-	private String localidad;
-	private Date fecha;
-	private double superficie;
+	private String Cod_Id;
+	private String Venta_Alquiler;
+	private String Calle;
+	private String Localidad;
+	private String Fecha_Alta;
+	private String Superficie_Total;
 	
 	
-	
-	public Inmueble(int codigo, boolean venta, boolean alquiler, String calle,
-			String localidad, Date fecha, double superficie) {
-		this.codigo = codigo;
-		this.venta = venta;
-		this.alquiler = alquiler;
-		this.calle = calle;
-		this.localidad = localidad;
-		this.fecha = fecha;
-		this.superficie = superficie;
+	public Inmueble(String cod_id, String venta_alquiler, String calle,
+			String localidad, String fecha_alta, String superficie_total) {
+		this.Cod_Id = cod_id;
+		this.Venta_Alquiler = fecha_alta;
+		this.Calle = calle;
+		this.Localidad = localidad;
+		this.Fecha_Alta = fecha_alta;
+		this.Superficie_Total = superficie_total;
 	}
 
-	
-	public boolean isVenta() {
-		return venta;
+	public String getCod_Id() {
+		return Cod_Id;
 	}
 
-
-	public void setVenta(boolean venta) {
-		this.venta = venta;
+	public void setCod_Id(String cod_Id) {
+		Cod_Id = cod_Id;
 	}
 
-
-	public boolean isAlquiler() {
-		return alquiler;
+	public String getVenta_Alquiler() {
+		return Venta_Alquiler;
 	}
 
-
-	public void setAlquiler(boolean alquiler) {
-		this.alquiler = alquiler;
+	public void setVenta_Alquiler(String venta_Alquiler) {
+		Venta_Alquiler = venta_Alquiler;
 	}
-
 
 	public String getCalle() {
-		return calle;
+		return Calle;
 	}
-
 
 	public void setCalle(String calle) {
-		this.calle = calle;
+		Calle = calle;
 	}
-
 
 	public String getLocalidad() {
-		return localidad;
+		return Localidad;
 	}
-
 
 	public void setLocalidad(String localidad) {
-		this.localidad = localidad;
+		Localidad = localidad;
 	}
 
-
-	public Date getFecha() {
-		return fecha;
+	public String getFecha_Alta() {
+		return Fecha_Alta;
 	}
 
-
-	public void setFecha(Date fecha) {
-		this.fecha = fecha;
+	public void setFecha_Alta(String fecha_Alta) {
+		Fecha_Alta = fecha_Alta;
 	}
 
-
-	public double getSuperficie() {
-		return superficie;
+	public String getSuperficie_Total() {
+		return Superficie_Total;
 	}
 
-
-	public void setSuperficie(double superficie) {
-		this.superficie = superficie;
+	public void setSuperficie_Total(String superficie_Total) {
+		Superficie_Total = superficie_Total;
 	}
-
-
-	public int getCodigo() {
-		return codigo;
-	}
-
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
-	}
-
-
-
 }

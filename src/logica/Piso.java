@@ -1,24 +1,22 @@
 package logica;
 
-import java.util.Date;
-
 public class Piso extends Inmueble{
+	
+	private String Num_Habitaciones;
 
-	private int numhab;
-
-	public Piso(int numhab, int codigo, boolean venta, boolean alquiler, String calle,
-			String localidad, Date fecha, double superficie) {
+	public Piso(String cod_id, String venta_alquiler, String calle,
+			String localidad, String fecha_alta, String superficie_total,String Num_Habitaciones) {
 		
-		super(codigo, venta, alquiler, calle, localidad, fecha, superficie);
-		this.numhab = numhab;
+		super(cod_id, venta_alquiler, calle, localidad, fecha_alta, superficie_total);
+		this.Num_Habitaciones = Num_Habitaciones;
 	}
 
-	public int getNumhab() {
-		return numhab;
+	public String getNum_Habitaciones() {
+		return Num_Habitaciones;
 	}
 
-	public void setNumhab(int numhab) {
-		this.numhab = numhab;
+	public void setNum_Habitaciones(String Num_Habitaciones) {
+		this.Num_Habitaciones = Num_Habitaciones;
 	}
 	
 	

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clay-model clay-version="2.0.1">
+<database-model author="" begin-script="" end-script="" id="300c55aa:1424b73cc13:-8000" name="dbInmobiliaria" sql-dialect-id="jp.azzurri.clay.dialect.HSQLDB_1_7_0_Dialect" version="1.0">
+<schema-list>
+<schema id="300c55aa:1424b73cc13:-7ffd" name="DEFAULT_SCHEMA">
+<table-list>
+<table id="5886d762:142524cc6cc:-7ffc" name="INMUEBLE">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="5886d762:142524cc6cc:-7ff5" mandatory="true" name="COD_ID">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="20" decimal-digits="0" default-value="" id="5886d762:142524cc6cc:-7ff4" mandatory="false" name="CALLE">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="20" decimal-digits="0" default-value="" id="5886d762:142524cc6cc:-7ff3" mandatory="false" name="LOCALIDAD">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="5886d762:142524cc6cc:-7ff2" mandatory="false" name="FECHA_ALTA">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="5886d762:142524cc6cc:-7ff1" mandatory="false" name="SUPERFICIE_TOTAL">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="5886d762:142524cc6cc:-7ff0" mandatory="false" name="VENTA_ALQUILER">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="5886d762:142524cc6cc:-7ffb" name="PK_INMUEBLE">
+<primary-key-column name="COD_ID"/>
+</primary-key>
+</table>
+<table id="5886d762:142524cc6cc:-7fef" name="PISO">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="5886d762:142524cc6cc:-7feb" mandatory="true" name="COD_ID">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="5886d762:142524cc6cc:-7fea" mandatory="false" name="NUM_HABITACIONES">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="5886d762:142524cc6cc:-7fee" name="PK_PISO">
+<primary-key-column name="COD_ID"/>
+</primary-key>
+<foreign-key-list>
+<foreign-key id="5886d762:142524cc6cc:-7fc3" name="FK_PISO_1" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_INMUEBLE" referenced-table="INMUEBLE" referenced-table-schema="DEFAULT_SCHEMA" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="COD_ID" referenced-key-column-name="COD_ID"/>
+</foreign-key>
+</foreign-key-list>
+</table>
+</table-list>
+</schema>
+</schema-list>
+</database-model>
+<diagram>
+<table-figure height="102" refid="5886d762:142524cc6cc:-7ffc" width="135" x="23" y="16"/>
+<table-figure height="65" refid="5886d762:142524cc6cc:-7fef" width="141" x="26" y="213"/>
+</diagram>
+</clay-model>
