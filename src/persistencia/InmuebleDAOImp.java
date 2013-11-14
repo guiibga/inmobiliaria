@@ -3,7 +3,7 @@ import java.sql.*;
 import logica.Inmueble;
 import excepciones.DAOExcepcion;
 
-public class InmuebleDAOImp implements IInmuebleDAO {
+public class InmuebleDAOImp implements IInmuebleDAO { //java
 	protected ConnectionManager connManager;
 	
 	   public InmuebleDAOImp() throws DAOExcepcion {
